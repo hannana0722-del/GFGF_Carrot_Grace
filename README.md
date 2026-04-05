@@ -143,7 +143,8 @@ npm install
 npm run dev
 ```
 
-브라우저에서 터미널에 표시된 주소(기본 `http://localhost:5173`)로 접속합니다.
+브라우저에서 터미널에 표시된 주소(기본 `http://localhost:3000`)로 접속합니다. 
+### ** npm run dev 실행 시 terminal에서 확인이 가능한 포트번호로 접속합니다. 3000번이 아닐 수 있습니다 **
 
 ---
 
@@ -151,9 +152,9 @@ npm run dev
 
 | 역할 | 아이디 | 비밀번호 | 설명 |
 |------|--------|----------|------|
-| 관리자 | `admin` | `admin123` | 전체 기능 접근 가능 |
-| 인솔자 | `manager_us` | `manager123` | 담당 팀 관리 |
-| 참여자 | `participant_미국_01` | `part123` | 개인 데이터 조회·입력 |
+| 관리자 | `admin` | `password` | 전체 기능 접근 가능 |
+| 인솔자 | `manager_us` | `password` | 담당 팀 관리 |
+| 참여자 | `participant_미국_01` | `password` | 개인 데이터 조회·입력 |
 
 > seed_data.py를 실행하지 않은 경우 `admin / admin123` 계정만 자동 생성됩니다.
 
@@ -199,3 +200,6 @@ gsdf-dashboard/
 ## 문의
 
 이슈 및 기능 제안은 GitHub Issues를 이용해 주세요.
+
+
+## 
