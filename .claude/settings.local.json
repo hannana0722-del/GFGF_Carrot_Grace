@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m py_compile app/routers/auth.py)",
+      "Bash(python3 -m py_compile app/routers/announcements.py)",
+      "Bash(python3 -m py_compile app/routers/health_check.py)",
+      "Bash(python3 -m py_compile app/routers/assignments.py)",
+      "Bash(python3 -m py_compile app/routers/attendance.py)",
+      "Bash(python3 -c ':*)",
+      "Bash(python3 -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(python3 seed_data.py)",
+      "Bash(python3 -m py_compile seed_data.py)",
+      "Bash(pip3 install:*)",
+      "Bash(npm install:*)",
+      "Bash(pip3 show:*)",
+      "Bash(python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s http://localhost:8000/)",
+      "Bash(python3 -m json.tool kill %1)",
+      "Bash(ls -la /Users/hannah/gsdf-dashboard/backend/*.db)"
+    ]
+  }
+}
