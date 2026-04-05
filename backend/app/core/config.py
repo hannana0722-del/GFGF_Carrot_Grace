@@ -9,8 +9,8 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = True
 
-    # Security — .env 파일의 SECRET_KEY 필수 (기본값 없음)
-    SECRET_KEY: str
+    # Security — .env에서 설정 권장. 없으면 개발용 기본값 사용 (운영 환경에서는 반드시 변경할 것)
+    SECRET_KEY: str = "dev-only-secret-key-change-before-production"
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24  # 24 hours
 

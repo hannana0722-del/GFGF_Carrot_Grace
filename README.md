@@ -89,13 +89,15 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-#### 환경변수 설정
+#### 환경변수 설정 (선택)
+
+`.env` 파일이 없어도 개발용 기본값으로 바로 실행됩니다.
+
+운영 환경이나 보안이 중요한 경우에는 아래와 같이 직접 설정하세요.
 
 ```bash
 cp .env.example .env
 ```
-
-`.env` 파일을 열어 `SECRET_KEY` 값을 변경합니다.
 
 ```bash
 # 랜덤 키 생성 (macOS/Linux)
@@ -110,6 +112,8 @@ ACCESS_TOKEN_EXPIRE_MINUTES=1440
 DATABASE_URL=sqlite:///./gsdf.db
 UPLOAD_DIR=uploads
 ```
+
+> **개발 환경**에서는 `.env` 없이도 실행됩니다. **운영 배포 시**에는 반드시 `SECRET_KEY`를 변경하세요.
 
 #### 서버 실행
 
